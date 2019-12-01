@@ -3,6 +3,7 @@ LET REC fib n =
     ELSE IF n = 1 THEN 1
     ELSE fib (n - 1) + fib (n - 2)
 IN
-LET x = fib 16
-IN
-1 + 2
+LET REC pow n = FUN x -> 
+    IF n = 1 THEN x ELSE x * ( pow (n-1) x )
+IN 
+pow (fib 10) 2
