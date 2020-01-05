@@ -1,0 +1,3 @@
+LET funct = FUN f -> (FUN par -> ((f (FST par)) (SND par))) 
+IN
+funct

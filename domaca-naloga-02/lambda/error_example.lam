@@ -1,0 +1,4 @@
+LET funkcija = FUN a -> (SND a * FST a) > 0
+IN MATCH [] WITH
+    | [] -> FALSE :: [] 
+    | x :: xs -> funkcija
